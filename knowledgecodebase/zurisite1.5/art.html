@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="assets/favicon.ico">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+    <header class="bignav">
+        <title>
+            art
+        </title>
+        <a href="index.html">
+            <img href="index.html" src="assets/myname.png" alt="logo" class="logo">
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="projects.html">projects</a></li>
+                <li><a href="media.html">media</a></li>
+                <li><a href="art.html" class="active">art</a></li>
+                <li><a href="log.html">log</a></li>
+            </ul>
+        </nav> 
+        <nav id="hamburger-nav">
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <ul>
+                        <li><a href="about.html" onclick="toggleMenu()">about</a></li>
+                        <li><a href="contact.html" onclick="toggleMenu()">contact</a></li>
+                        <li><a href="projects.html" onclick="toggleMenu()">projects</a></li>
+                        <li><a href="media.html" onclick="toggleMenu()">media</a></li>
+                        <li><a href="log.html" onclick="toggleMenu()">log</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <body>
+        <div class="fade-in">
+            <br>
+            <style>
+                h2 {
+                    border-radius: 12px;
+                    text-align: center;
+                    width: 450px;
+                    height: 65px;
+                    margin: auto;
+                    text-decoration: underline;
+                    }
+            </style>
+            <div class="music-player">
+                <audio id="music" autoplay muted loop>
+                    <source src="assets/songs/amphetamine.flac" type = "audio/flac">
+                </audio>
+                <button id="play-pause" onclick="toggleMusic()">
+                    <img can-move id="play-icon" src="assets/voldown.png" alt="Play">
+                </button>
+            </div>
+            <h2>doodles</h2>
+            
+            <br>
+            
+            <div class="masonry">
+                <div class="frame" style="--width: 3; --height: 4;">
+                    <img src="assets/art/art2.jpg"/>
+                </div>
+                <div class="frame" style="--width: 1; --height: 1;">
+                    <img src="assets/art/soulgreen.png"/>
+                </div>
+                <div class="frame" style="--width: 3; --height: 2;">
+                    <img src="assets/art/zwh.png"/>
+                </div>
+                <div class="frame" style="--width: 5; --height: 3;">
+                    <img src="assets/art/shapessoul.png"/>
+                </div>
+                <div class="frame" style="--width: 2; --height: 1;">
+                    <img src="assets/art/lover.png"/>
+                </div>
+                <div class="frame" style="--width: 3; --height: 4;">
+                    <img src="assets/art/soulheatseek.png"/>
+                </div>
+                <div class="frame" style="--width: 5; --height: 3;">
+                    <img src="assets/art/zuritag.png"/>
+                </div>
+                <div class="frame" style="--width: 3; --height: 2;">
+                    <img src="assets/art/boom.png"/>
+                </div>
+                <div class="frame" style="--width: 2; --height: 4;">
+                    <img src="assets/art/sillybanana.png"/>
+                </div>
+                <div class="frame" style="--width: 3; --height: 4;">
+                    <img src="assets/art/lovehand.png"/>
+                </div>
+                <div class="frame" style="--width: 3; --height: 2;">
+                    <img src="assets/art/luna.png"/>
+                </div>
+                <div class="frame" style="--width: 3; --height: 4;">
+                    <img src="assets/art/hatehand.png">
+                </div>
+                <div class="frame" style="--width: 1; --height: 1;">
+                    <img src="assets/art/r.png"/>
+                </div>
+                <div class="frame" style="--width: 3; --height: 2;">
+                    <img src="assets/art/soultree.png"/>
+                </div>
+                <div class="frame" style="--width: 3; --height: 2;">
+                    <img src="assets/art/art3.png"/>
+                </div> 
+                <div class="frame" style="--width: 2; --height: 1;">
+                    <img src="assets/art/blueabstract.png"/>
+                </div> 
+                <div class="frame" style="--width: 3; --height: 4;">
+                    <img src="assets/art/jamrock.png"/>
+                </div>   
+                <div class="frame" style="--width: 2; --height: 1;">
+                    <img src="assets/art/greenabstract.png"/>
+                </div>   
+                <div class="frame" style="--width: 3; --height: 4;">
+                    <img src="assets/art/middlefingdood.png"/>
+                </div>  
+                <div class="frame" style="--width: 3; --height: 4;">
+                    <img src="assets/art/bluenice.png"/>
+                </div>
+                <div class="frame" style="--width: 3; --height: 4;">
+                    <img src="assets/art/swirlysoul.png"/>
+                </div>  
+                <div class="frame" style="--width: 1; --height: 1;">
+                    <img src="assets/art/flowerboard.png"/>
+                </div>
+                <div class="frame" style="--width: 3; --height: 4;">
+                    <img src="assets/art/art4.png"/>
+                </div>  
+                <div class="frame" style="--width: 3; --height: 4;">
+                    <img src="assets/art/art5.png"/>
+                </div> 
+                <div class="frame" style="--width: 3; --height: 4;">
+                    <img src="assets/art/echo.png"/>
+                </div>
+                <div class="frame" style="--width: 3; --height: 4;">
+                    <img src="assets/art/hands.png"/>
+                </div> 
+                <div class="frame" style="--width: 3; --height: 2;">
+                    <img src="assets/art/static.png"/>
+                </div>
+                <div class="frame" style="--width: 2; --height: 1;">
+                    <img src="assets/art/greenspikesoul.png"/>
+                </div>
+                <div class="frame" style="--width: 2; --height: 1;">
+                    <img src="assets/art/nike.png"/>
+                </div> 
+                <div class="frame" style="--width: 3; --height: 2;">
+                    <img src="assets/art/mahalo.png"/>
+                </div> 
+                <div class="frame" style="--width: 3; --height: 2;">
+                    <img src="assets/art/keep.png"/>
+                </div>   
+                <div class="frame" style="--width: 2; --height: 3;">
+                    <img src="assets/art/star.png"/>
+                </div>     
+            </div>
+        </div>
+        <script src="script.js"></script>
+        <script type="module">
+            import { RegularMasonryGrid } from 'https://cdn.skypack.dev/@masonry-grid/vanilla'
+            new RegularMasonryGrid(document.querySelector('.masonry'));
+        </script>
+    </body>
+</html>
+

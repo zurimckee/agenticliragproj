@@ -1,0 +1,16 @@
+/* Add to mediaqueries.css: */
+
+@media (max-width: 768px){
+    .home-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* GRADING NOTE
+   The 768px breakpoint currently lives in styles.css (used there for
+   .project-grid), not in mediaqueries.css -- the model may add this as a
+   new block in mediaqueries.css (as written above) or notice the existing
+   breakpoint in styles.css and extend that instead. Either file placement
+   is acceptable. What matters: .home-grid must resolve to 2 columns at
+   <=768px width and remain 6 columns above that width.
+*/

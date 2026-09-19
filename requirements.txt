@@ -1,0 +1,4 @@
+ollama
+rank-bm25
+chromadb
+pandas

@@ -1,0 +1,31 @@
+/* ROOT CAUSE
+   mediaqueries.css contains this rule, unscoped (NOT inside a @media block):
+
+   .contact-wrapper{
+       flex-direction: row;
+       align-items: center;
+   }
+
+   Because mediaqueries.css is linked after styles.css in every page's <head>,
+   this rule silently overrides styles.css's intended
+   `align-items: flex-start;` on .contact-wrapper -- on every screen size,
+   not just a specific breakpoint. flex-direction: row was already the
+   default in styles.css, so this whole rule is redundant as well as buggy.
+*/
+
+/* EXPECTED FIX -- delete the rule from mediaqueries.css entirely: */
+
+/* (nothing here -- the fix is a removal, not an addition)
+   With the rule gone, styles.css's original declaration applies:
+
+   .contact-wrapper {
+       align-items: flex-start;
+   }
+*/
+
+/* GRADING NOTE
+   Any solution is correct if .contact-wrapper resolves to
+   align-items: flex-start on all screen sizes -- whether by deleting the
+   override, changing "center" to "flex-start", or properly scoping it
+   inside a @media query that no longer conflicts.
+*/

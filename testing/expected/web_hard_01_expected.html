@@ -1,0 +1,56 @@
+<!-- 1. Add inside <div class="filter-bar" id="filters">, after the filter buttons -->
+<input type="text" id="project-search" placeholder="search projects..." />
+
+
+<!-- 2. Replace the existing inline <script> block (the one that only
+        handles .filter-btn clicks) with a version that tracks both the
+        active category and the search term, and re-applies both together: -->
+
+<script>
+    let activeFilter = 'all';
+    let searchTerm = '';
+
+    function applyFilters() {
+        document.querySelectorAll('.card-wrap').forEach(card => {
+            const tags = card.dataset.tags || '';
+            const name = card.querySelector('.card-name')?.textContent.toLowerCase() || '';
+            const stack = card.querySelector('.card-stack')?.textContent.toLowerCase() || '';
+
+            const matchesFilter = activeFilter === 'all' || tags.includes(activeFilter);
+            const matchesSearch = searchTerm === '' || name.includes(searchTerm) || stack.includes(searchTerm);
+
+            if (matchesFilter && matchesSearch) {
+                card.classList.remove('hidden');
+            } else {
+                card.classList.add('hidden');
+            }
+        });
+    }
+
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            activeFilter = btn.dataset.filter;
+            applyFilters();
+        });
+    });
+
+    document.getElementById('project-search').addEventListener('input', (e) => {
+        searchTerm = e.target.value.trim().toLowerCase();
+        applyFilters();
+    });
+</script>
+
+<!-- GRADING NOTE
+     Accept any solution where:
+     1. Search filters live on the 'input' event (no submit button/reload).
+     2. Category filter and search combine with AND logic, not OR, and not
+        "last one wins" (e.g. selecting a category should not clear the
+        search box's effect, and vice versa).
+     3. Matching is case-insensitive.
+     4. The .hidden class + data-tags mechanism already in the file is
+        reused rather than replaced with something unrelated (e.g. a second
+        library, a full re-render, or hiding via inline styles instead of
+        the existing class).
+-->

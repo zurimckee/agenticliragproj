@@ -1,0 +1,186 @@
+[
+{
+
+    "task-id": 1,
+    "prompt": "Fix contact page box alignment",
+    "src-project": "zurisite1.5",
+    "language": "css",
+    "difficulty": "easy",
+    "retrieval-style": "keyword",
+    "prompt-path": "testing/prompt/web_easy_01_prompt.md",
+    "output-path": "testing/expected/web_easy_01_expected.css",
+    "target-files": ["mediaqueries.css", "styles.css", "contact.html"]
+},
+{
+    "task-id": 2,
+    "prompt": "Make the homepage folder grid responsive",
+    "src-project": "zurisite1.5",
+    "language": "css",
+    "difficulty": "easy",
+    "retrieval-style": "paraphrased",
+    "prompt-path": "testing/prompt/web_easy_02_prompt.md",
+    "output-path": "testing/expected/web_easy_02_expected.css",
+    "target-files": ["mediaqueries.css", "styles.css", "index.html"]
+
+},
+{
+    "task-id": 3,
+    "prompt": "Fix duplicate track downloads in the service worker",
+    "src-project": "tuneup",
+    "language": "js",
+    "difficulty": "easy",
+    "retrieval-style": "keyword",
+    "prompt-path": "testing/prompt/tuneup_easy_01_prompt.md",
+    "output-path": "testing/expected/tuneup_easy_01_expected.js",
+    "target-files": ["static/sw.js"]
+
+},
+{
+    "task-id": 4,
+    "prompt": "Fix duplicate 'now playing' track in the upcoming queue",
+    "src-project": "tuneup",
+    "language": "js",
+    "difficulty": "easy",
+    "retrieval-style": "paraphrased",
+    "prompt-path": "testing/prompt/tuneup_easy_02_prompt.md",
+    "output-path": "testing/expected/tuneup_easy_02_expected.js",
+    "target-files": ["static/script.js"]
+
+},
+{
+    "task-id": 5,
+    "prompt": "Add an 'invert' filter",
+    "src-project": "thatdamndog",
+    "language": "python",
+    "difficulty": "easy",
+    "retrieval-style": "keyword",
+    "prompt-path": "testing/prompt/dog_easy_01_prompt.md",
+    "output-path": "testing/expected/dog_easy_01_expected.py",
+    "target-files": ["app.py", "grayscale.py", "dogjail.py"],
+    "creates-new-file": true
+
+},
+{
+    "task-id": 6,
+    "prompt": "Show the last-updated time in the header",
+    "src-project": "parkingplusfullstack",
+    "language": "jsx",
+    "difficulty": "medium",
+    "retrieval-style": "keyword",
+    "prompt-path": "testing/prompt/web_medium_01_prompt.md",
+    "output-path": "testing/expected/web_medium_01_expected.jsx",
+    "target-files": ["src/components/Header.jsx"]
+
+},
+{
+    "task-id": 7,
+    "prompt": "Add an offline-sensors stat to the header",
+    "src-project": "parkingplusfullstack",
+    "language": "jsx",
+    "difficulty": "medium",
+    "retrieval-style": "keyword",
+    "prompt-path": "testing/prompt/web_medium_02_prompt.md",
+    "output-path": "testing/expected/web_medium_02_expected.jsx",
+    "target-files": ["src/App.jsx", "src/components/Header.jsx", "src/services/api.js"]
+
+},
+{
+    "task-id": 8,
+    "prompt": "Fix broken pagination for search results",
+    "src-project": "tuneup",
+    "language": "python",
+    "difficulty": "medium",
+    "retrieval-style": "keyword",
+    "prompt-path": "testing/prompt/tuneup_medium_01_prompt.md",
+    "output-path": "testing/expected/tuneup_medium_01_expected.py",
+    "target-files": ["app.py", "search.py"]
+
+},
+{
+    "task-id": 9,
+    "prompt": "Fix the mislabeled turn counter",
+    "src-project": "javamemorygame",
+    "language": "java",
+    "difficulty": "medium",
+    "retrieval-style": "keyword",
+    "prompt-path": "testing/prompt/memorygame_medium_01_prompt.md",
+    "output-path": "testing/expected/memorygame_medium_01_expected.java",
+    "target-files": ["GamePane.java"]
+
+},
+{
+    "task-id": 10,
+    "prompt": "Add a composite filter that reuses two existing filters",
+    "src-project": "thatdamndog",
+    "language": "python",
+    "difficulty": "medium",
+    "retrieval-style": "keyword",
+    "prompt-path": "testing/prompt/dog_medium_01_prompt.md",
+    "output-path": "testing/expected/dog_medium_01_expected.py",
+    "target-files": ["app.py", "dogjail.py", "screamo.py"],
+    "creates-new-file": true
+
+},
+{
+    "task-id": 11,
+    "prompt": "Add a live search box to the projects page filter",
+    "src-project": "zurisite1.5",
+    "language": "js/html",
+    "difficulty": "hard",
+    "retrieval-style": "paraphrased",
+    "prompt-path": "testing/prompt/web_hard_01_prompt.md",
+    "output-path": "testing/expected/web_hard_01_expected.html",
+    "target-files": ["projects.html"]
+
+},
+{
+    "task-id": 12,
+    "prompt": "Add a 'favorite lots' feature with persistence",
+    "src-project": "parkingplusfullstack",
+    "language": "jsx",
+    "difficulty": "hard",
+    "retrieval-style": "paraphrased",
+    "prompt-path": "testing/prompt/web_hard_02_prompt.md",
+    "output-path": "testing/expected/web_hard_02_expected.jsx",
+    "target-files": ["src/components/LotSelector.jsx"]
+},
+{
+    "task-id": 13,
+    "prompt": "Add a persisted 'best score' per difficulty level",
+    "src-project": "javamemorygame",
+    "language": "java",
+    "difficulty": "hard",
+    "retrieval-style": "paraphrased",
+    "prompt-path": "testing/prompt/memorygame_hard_02_prompt.md",
+    "output-path": "testing/expected/memorygame_hard_02_expected.java",
+    "target-files": ["GamePane.java"]
+
+},
+{
+    "task-id": 14,
+    "prompt": "Add a live elapsed-time timer",
+    "src-project": "javamemorygame",
+    "language": "java",
+    "difficulty": "hard",
+    "retrieval-style": "paraphrased",
+    "prompt-path": "testing/prompt/memorygame_hard_01_prompt.md",
+    "output-path": "testing/expected/memorygame_hard_01_expected.java",
+    "target-files": ["GamePane.java"]
+},
+{
+    "task-id": 15,
+    "prompt": "Add a filter-intensity slider",
+    "src-project": "thatdamndog",
+    "language": "python",
+    "difficulty": "hard",
+    "retrieval-style": "paraphrased",
+    "prompt-path": "testing/prompt/dog_hard_01_prompt.md",
+    "output-path": "testing/expected/dog_hard_01_expected.py",
+    "target-files": ["app.py", "image_converter.py"],
+    "creates-new-file": true
+    }]
+
+
+
+
+
