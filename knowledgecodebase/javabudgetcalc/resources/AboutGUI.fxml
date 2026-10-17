@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="AboutController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="210.0" prefWidth="200.0">
+         <children>
+            <Label text="This application was created by:" />
+            <Label text="Zuri McKee" />
+            <Label text="For COMP167" />
+            <Label alignment="CENTER" text="Spring Semester 2025" />
+            <Button fx:id="btnClose" mnemonicParsing="false" onAction="#onBtnCloseClick" text="Close" />
+         </children>
+      </VBox>
+   </children>
+</StackPane>

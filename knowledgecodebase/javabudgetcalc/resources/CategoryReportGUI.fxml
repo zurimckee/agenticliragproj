@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" spacing="10.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BudgetCategoryReportController">
+   <children>
+      <Label text="Grade Category Report">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbCategory" onAction="#onComboClick2" prefHeight="25.0" prefWidth="184.0" />
+      <TextArea fx:id="txtReport" prefHeight="364.0" prefWidth="600.0" />
+      <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-alignment: CENTER;">
+         <children>
+            <Button fx:id="btnClose" mnemonicParsing="false" onAction="#onBtnCloseClick" text="Close" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</VBox>

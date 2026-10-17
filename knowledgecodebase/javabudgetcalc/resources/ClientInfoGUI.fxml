@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="251.0" prefWidth="426.0" spacing="5.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientInfoController">
+    <children>
+        <HBox alignment="CENTER" prefHeight="35.0" prefWidth="482.0">
+            <children>
+                <Label text="Edit Client Data">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            </children>
+        </HBox>
+        <GridPane>
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.0" minWidth="10.0" prefWidth="123.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="502.0" minWidth="10.0" prefWidth="359.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+         <children>
+            <Label text="First Name" />
+            <Label text="Last Name" GridPane.rowIndex="1" />
+            <Label text="Home Address" GridPane.rowIndex="2" />
+            <Label text="Phone Number" GridPane.rowIndex="3" />
+            <Label text="Email" GridPane.rowIndex="4" />
+            <TextField fx:id="txtFirstName" prefHeight="27.0" prefWidth="173.0" GridPane.columnIndex="1">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></TextField>
+            <TextField fx:id="txtLastName" prefWidth="300" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtHomeAddress" prefHeight="25.0" prefWidth="432.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtPhoneNumber" prefWidth="300" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="txtEmail" prefWidth="300" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+        </GridPane>
+        <HBox alignment="CENTER" prefHeight="49.0" prefWidth="416.0" spacing="10.0">
+            <children>
+                <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#onBtnCancelClick" text="Cancel" />
+                <Button fx:id="btnSave" mnemonicParsing="false" onAction="#onBtnSaveClick" text="Save" />
+            </children>
+        </HBox>
+    </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</VBox>
