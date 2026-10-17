@@ -1,4 +1,4 @@
-# agentic cli rag pro
+# agentic cli rag proj
 this repo is a benchmark harness to compare retrieval-augmented generation (RAG) strategies for a local, code-assisting agentic CLI tool. 
 the goal is to see which retrieval method gives a coding agent the highest task success rate while retrieving the correct files and passing as many criteria as possible.
 
