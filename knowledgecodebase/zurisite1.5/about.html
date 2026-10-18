@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="view-transition" content="same-origin">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="assets/favicon.ico">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+    <header class="bignav">
+        <title>
+            about
+        </title>
+        <a href="index.html">
+            <img href="index.html" src="assets/myname.png" alt="logo" class="logo">
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="about.html" class="active">about</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="projects.html">projects</a></li>
+                <li><a href="media.html">media</a></li>
+                <li><a href="art.html">art</a></li>
+                <li><a href="log.html">log</a></li>
+            </ul>
+        </nav> 
+        <nav id="hamburger-nav">
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <ul>
+                        <li><a href="contact.html" onclick="toggleMenu()">contact</a></li>
+                        <li><a href="projects.html" onclick="toggleMenu()">projects</a></li>
+                        <li><a href="media.html" onclick="toggleMenu()">media</a></li>
+                        <li><a href="art.html" onclick="toggleMenu()">art</a></li>
+                        <li><a href="log.html" onclick="toggleMenu()">log</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>   
+    <body>
+        <div> 
+            <div class="music-player">
+                <audio id="music" autoplay muted loop>
+                    <source src="assets/songs/undercontrol.flac" type = "audio/flac">
+                </audio>
+                <button id="play-pause" onclick="toggleMusic()">
+                    <img can-move id="play-icon" src="assets/voldown.png" alt="Play">
+                </button>
+            </div>
+            <br>
+            <div class="parent">
+                    <p> 
+                        <img src="assets/self.JPG" width="1440" height="1920" alt="" class="img-style"> 
+                    </p>
+                <div class="favorites-paragraph">
+                    <p>
+                    <strong>name:</strong> zuri
+                    <br>
+                    <strong>job:</strong> tech fellow @ codepath
+                    <br>
+                    <strong>school:</strong> nc a&t state university (aggie pride)
+                    <br>
+                    <strong>hometown:</strong> charlotte, nc
+                    <br>
+                    <strong>sign:</strong> scorpio sun, aquarius moon, taurus rising
+                    <br>
+                    <strong>favorite colors:</strong> sky blue, all greens
+                    <br>
+                    <strong>favorite app:</strong> pinterest
+                    <br>
+                    <strong>hobbies:</strong> creating, hiking, bike riding, communing with nature, drawing, exploring, listening to music
+                    <br>
+                    <strong>craving:</strong> trader joe's takis
+                    </p>  
+                </div>
+            </div>
+            <div class="about-paragraph">
+                <p>
+                    hey im zuri! this is my website or portfolio whatever you want to call it. i've always been a creative at heart, and 
+                    this is a great way to bridge the gap between my hobbies and also to explore coding as an art form. there's a little bit of 
+                    everything here, but of course new features/things are always being added so it will grow as i do. 
+                    this site is supposed to serve as a hub for all of my projects, coding and otherwise. enjoy!
+                </p>
+            </div>
+        </div>    
+        <script src="script.js"></script>
+        <script>
+            const text = document.querySelector('.about-paragraph p')
+            const fullText = text.textContent
+            text.textContent = ''
+
+            let i = 0
+            const type = () => {
+            if (i < fullText.length) {
+                text.textContent += fullText[i]
+                i++
+                setTimeout(type, 30 + Math.random() * 60)
+            }
+            }
+            type()
+        </script>
+    </body>
+</html>
